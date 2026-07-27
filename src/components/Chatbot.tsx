@@ -45,7 +45,7 @@ function getBotReply(message: string) {
     return "Vrushabh is pursuing B.Tech in Computer Science Engineering at Sandip University, Nashik.";
   }
   if (msg.includes("certification") || msg.includes("certificate")) {
-    return "Vrushabh has certifications from Microsoft Learn, Cisco Networking Academy, TechnoHacks, Codec Technologies, and Profound Edutech.";
+    return "Vrushabh has certifications from Microsoft Learn, Cisco Networking Academy, TechnoHacks, Codec Technologies, Coding Seekho, and Profound Edutech.";
   }
   if (msg.includes("contact") || msg.includes("email") || msg.includes("linkedin")) {
     return "You can contact Vrushabh by email, GitHub, LinkedIn, or the contact form near the bottom of the site.";
