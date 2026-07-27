@@ -99,7 +99,17 @@ export const timeline = [
   },
 ];
 
-export const certifications = [
+export type Certification = {
+  name: string;
+  issuer: string;
+  url?: string;
+};
+
+export const certifications: Certification[] = [
+  {
+    name: "Deloitte Data Analytics Job Simulation",
+    issuer: "Deloitte - 2026",
+  },
   { name: "Automate Development Tasks with GitHub Actions", issuer: "Microsoft Learn - Jan 2026" },
   { name: "Get Started with Copilot in Power BI", issuer: "Microsoft Learn - Jan 2026" },
   { name: "Discover Data Analysis", issuer: "Microsoft Learn - Jan 2026" },

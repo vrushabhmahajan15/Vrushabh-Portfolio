@@ -9,13 +9,17 @@ export function Certifications() {
       <SectionHeading eyebrow="Credentials" title="Certifications & Achievements" />
       <div className="mx-auto grid max-w-5xl gap-4 md:grid-cols-2 lg:grid-cols-3">
         {certifications.map((cert, index) => (
-          <motion.div
+          <motion.a
             key={cert.name}
+            href={cert.url}
+            target={cert.url ? "_blank" : undefined}
+            rel={cert.url ? "noopener noreferrer" : undefined}
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.06 }}
             className="flex items-start gap-3 rounded-2xl glass p-4 transition hover:bg-white/5"
+            aria-label={cert.url ? `Open ${cert.name} certificate` : undefined}
           >
             <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl" style={{ background: "var(--gradient-hero)" }}>
               <Award className="h-5 w-5 text-primary-foreground" />
@@ -23,8 +27,9 @@ export function Certifications() {
             <div>
               <div className="text-sm font-medium leading-snug">{cert.name}</div>
               <div className="mt-1 text-[11px] text-muted-foreground">{cert.issuer}</div>
+              {cert.url ? <div className="mt-2 text-[10px] uppercase tracking-widest text-neon-cyan">View Certificate</div> : null}
             </div>
-          </motion.div>
+          </motion.a>
         ))}
       </div>
     </section>
