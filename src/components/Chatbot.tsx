@@ -8,10 +8,10 @@ type Message = {
 };
 
 const prompts = [
-  "Tell me about your projects",
+  
   "What are your skills?",
   "Show your certifications",
-  "How can I contact you?",
+  
 ];
 
 function useTyping(text: string, speed = 80) {
@@ -36,10 +36,10 @@ function getBotReply(message: string) {
   const msg = message.toLowerCase();
 
   if (msg.includes("skill")) {
-    return "Vrushabh is skilled in Python, SQL, Power BI, Excel, Pandas, NumPy, data visualization, and machine learning fundamentals.";
+    return "Vrushabh is skilled in Python, SQL, Power BI, Excel, Pandas, NumPy, data visualization,Tableau and machine learning fundamentals.";
   }
   if (msg.includes("project")) {
-    return "Vrushabh has worked on DeepTrade stock prediction, Global EV Market Insight Dashboard, IPL Data Analysis, and business analytics dashboards.";
+    return "Vrushabh has worked on DeepTrade stock prediction, AI Architech studio, Global EV Market Insight Dashboard, IPL Data Analysis, and business analytics dashboards.";
   }
   if (msg.includes("education")) {
     return "Vrushabh is pursuing B.Tech in Computer Science Engineering at Sandip University, Nashik.";
@@ -48,7 +48,7 @@ function getBotReply(message: string) {
     return "Vrushabh has certifications from Microsoft Learn, Cisco Networking Academy, TechnoHacks, Codec Technologies, Coding Seekho, and Profound Edutech.";
   }
   if (msg.includes("contact") || msg.includes("email") || msg.includes("linkedin")) {
-    return "You can contact Vrushabh by email, GitHub, LinkedIn, or the contact form near the bottom of the site.";
+    return "You can contact Vrushabh by email, LinkedIn, or the contact form near the bottom of the site.";
   }
 
   return "I am here to help you know more about Vrushabh's analytics, BI, Python, and project work.";
