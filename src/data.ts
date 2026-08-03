@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "AI Architect Studio",
+    desc: "Designed an AI-powered platform that converts natural language prompts into intelligent 2D floor plans and 3D building models, streamlining architectural planning and visualization through automated layout generation.",
+    tags: ["AI", "React", "3D Modeling", "Architecture"],
+    metric: "AI",
+    metricLabel: "Design Studio",
+    hue: 260,
+    github: null,
+    demo: "https://ai-architect-studio-vert.vercel.app/",
+  },
+  {
     title: "DeepTrade - Stock Market Prediction",
     desc: "ML-based stock market prediction system using Python, LSTM neural networks, and technical indicators for trend forecasting and buy/sell signal generation.",
     tags: ["Python", "LSTM", "Pandas", "scikit-learn"],
